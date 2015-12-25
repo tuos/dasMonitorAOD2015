@@ -1,0 +1,3 @@
+0 */2 * * * cd /home/tuos/CMSSW_7_5_5_patch3/src/runBlockDataset/runAllPDs/PbPbAODv1/jobs && bash jobs.sh
+10 */2 * * * cd /home/tuos/CMSSW_7_5_5_patch3/src/runBlockDataset/runAllPDs/PbPbAODv1/jobs && bash plotjobs.sh
+15 */2 * * * cd /home/tuos/CMSSW_7_5_5_patch3/src/runBlockDataset/runAllPDs/PbPbAODv1/jobs && cp *.png /home/tuos/web/dasRun15Monitor/
