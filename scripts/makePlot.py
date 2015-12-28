@@ -39,7 +39,6 @@ plt.title("Total number of lumi vs. Time, figure made @ "+str(datetime.datetime.
 plt.ylabel("Number of lumi section", fontsize=20)
 ax3 = fig3.add_subplot(111)
 plt.text(0.5, 0.2, 'Total Lumi Section in RAW data = 508,635', ha='center', va='center', transform=ax3.transAxes, fontsize=30)
-
 plt.grid(True)
 plt.ylim(0, 7e5)
 fig3.autofmt_xdate()
