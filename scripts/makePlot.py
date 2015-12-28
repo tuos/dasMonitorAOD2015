@@ -24,6 +24,8 @@ plt.plot_date(x=days, y=evtSize, fmt="r-", marker='o', markersize=20, linestyle=
 plt.legend(loc='upper left', numpoints = 1, fontsize=40)
 plt.title("Total number of event vs. Time, figure made @ "+str(datetime.datetime.now())+" CST", fontsize=20)
 plt.ylabel("Total number of event (M)", fontsize=20)
+ax2 = fig2.add_subplot(111)
+plt.text(0.5, 0.2, 'Number of total RAW events = 1113.07 M', ha='center', va='center', transform=ax2.transAxes, fontsize=30)
 plt.grid(True)
 plt.ylim(0, 1200)
 fig2.autofmt_xdate()
@@ -35,6 +37,9 @@ plt.plot_date(x=days, y=lumiSize, fmt="r-", marker='o', markersize=20, linestyle
 plt.legend(loc='upper left', numpoints = 1, fontsize=40)
 plt.title("Total number of lumi vs. Time, figure made @ "+str(datetime.datetime.now())+" CST", fontsize=20)
 plt.ylabel("Number of lumi section", fontsize=20)
+ax3 = fig3.add_subplot(111)
+plt.text(0.5, 0.2, 'Total Lumi Section in RAW data = 508,635', ha='center', va='center', transform=ax3.transAxes, fontsize=30)
+
 plt.grid(True)
 plt.ylim(0, 7e5)
 fig3.autofmt_xdate()
