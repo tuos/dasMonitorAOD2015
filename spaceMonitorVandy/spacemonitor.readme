@@ -1,0 +1,21 @@
+at ACCRE
+(with terminal A)
+cd /scratch/tuos/temp/spaceMonitor/testscript/DMWMMON/SiteInfoProviders/LStore/
+bash lstoredump.sh
+(with another terminal B)
+ssh se1
+cd spacemonitor/
+scp tuos@login.accre.vanderbilt.edu:/scratch/tuos/temp/spaceMonitor/testscript/DMWMMON/SiteInfoProviders/LStore/storage_dump_vandyT2.1432564872.txt .
+sudo su phedex
+unset PERL5LIB
+source /home/phedex/sw/slc6_amd64_gcc461/cms/PHEDEX/4.1.3-comp3/etc/profile.d/init.sh
+export PHEDEX_ROOT=/nfs_mounts/home/tuos/spacemonitor/PHEDEX
+export PERL5LIB=$PHEDEX_ROOT/perl_lib:$PERL5LIB
+export PATH=$PHEDEX_ROOT/Utilities:$PHEDEX_ROOT/Utilities/testSpace:$PATH
+grid-proxy-init -rfc -bits 1024
+spacecount posix --dump storage_dump_vandyT2.1431976172.txt --node T2_US_Vanderbilt
+(back to terminal A)
+cd /store/user/tuos/SpaceMonitorT2_US_Vanderbilt/storageDumpsFiles
+vi upload.$(date +%s).txt
+(paste the log text from uploading)
+
