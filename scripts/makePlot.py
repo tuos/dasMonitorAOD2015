@@ -58,4 +58,17 @@ fig4.autofmt_xdate()
 plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
 fig4.savefig('figFile.png')
 
+# adding plot for finished events in percent
+fig5 = plt.figure(figsize=(15,10))
+plt.plot_date(x=days, y=evtSize/1122.18, fmt="r-", marker='o', markersize=20, linestyle='-', color='r', linewidth=5.0, label='nEvent in percent vs. Time')
+plt.legend(loc='upper left', numpoints = 1, fontsize=40)
+plt.title("nEvent in percent vs. Time, figure made @ "+str(datetime.datetime.now())+" CST", fontsize=20)
+plt.ylabel("(Total number of AOD event)/(Total RAW event)", fontsize=20)
+ax5 = fig5.add_subplot(111)
+plt.text(0.5, 0.2, '(Total AOD event)/(Total RAW event)', ha='center', va='center', transform=ax5.transAxes, fontsize=30)
+plt.grid(True)
+plt.ylim(0, 1.2)
+fig5.autofmt_xdate()
+plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+fig5.savefig('figEventInPercent.png')
 
