@@ -6,6 +6,7 @@ bash lstoredump.sh
 ssh se1
 cd spacemonitor/
 scp tuos@login.accre.vanderbilt.edu:/scratch/tuos/temp/spaceMonitor/testscript/DMWMMON/SiteInfoProviders/LStore/storage_dump_vandyT2.1432564872.txt .
+(scp tuos@vmps55.accre.vanderbilt.edu:/scratch/tuos/temp/spaceMonitor/testscript/DMWMMON/SiteInfoProviders/LStore/storage_dump_vandyT2.1*.txt .)
 sudo su phedex
 unset PERL5LIB
 source /home/phedex/sw/slc6_amd64_gcc461/cms/PHEDEX/4.1.3-comp3/etc/profile.d/init.sh
