@@ -8,4 +8,5 @@ eval `scramv1 runtime -sh`
 #/usr/local/bin/python getPDSize.py
 python getPDSize.py
 
+/usr/local/lio/bin/lio_du -h -s @:/cms/store/hidata/HIRun2015/ > vandySize.txt
 
