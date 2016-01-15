@@ -74,17 +74,17 @@ with open("vandySize.txt") as f:
 sizeAtVandy=last_row[1:8]
 # adding plot for finished events in percent
 fig5 = plt.figure(figsize=(15,10))
-plt.plot_date(x=days, y=evtSize/1122.18, fmt="r-", marker='o', markersize=20, linestyle='-', color='r', linewidth=5.0, label='nEvent in percent vs. Time')
+plt.plot_date(x=days, y=evtSize*100/1122.18, fmt="r-", marker='o', markersize=20, linestyle='-', color='r', linewidth=5.0, label='nEvent in percent vs. Time')
 plt.legend(loc='upper left', numpoints = 1, fontsize=40)
 plt.title("nEvent in percent vs. Time, figure made @ "+str(datetime.datetime.now())+" CST", fontsize=20)
-plt.ylabel("(Total number of AOD event)/(Total RAW event)", fontsize=25)
+plt.ylabel("(Total AOD event)/(Total RAW event) (%)", fontsize=25)
 ax5 = fig5.add_subplot(111)
 plt.text(0.38, 0.75, '(Total AOD event)/(Total RAW event)', ha='center', va='center', transform=ax5.transAxes, fontsize=30)
 latestAODEvt="Latest total AOD event = "+str('{:.2f}'.format(round(float(evtSize[-1]), 2)))+" M"
 plt.text(0.34, 0.635, latestAODEvt, ha='center', va='center', transform=ax5.transAxes, fontsize=26)
 plt.text(0.29, 0.575, 'Total RAW event = 1122.18 M', ha='center', va='center', transform=ax5.transAxes, fontsize=26)
 plt.text(0.99, evtSize[-1]/1122.18/1.2, '-----', ha='center', va='center', transform=ax5.transAxes, fontsize=30)
-latestRatio=str('{:.3f}'.format(round(float(evtSize[-1]/1122.18), 3)))
+latestRatio=str('{:.1f}'.format(round(float(evtSize[-1]*100/1122.18), 1)))+"%"
 plt.text(1.076, evtSize[-1]/1122.18/1.2, latestRatio, ha='center', va='center', transform=ax5.transAxes, fontsize=30)
 ax5.tick_params(axis='x', labelsize=25)
 ax5.tick_params(axis='y', labelsize=25)
@@ -100,7 +100,7 @@ plt.text(0.59, 0.19, volumeInDAS, ha='center', va='center', transform=ax5.transA
 plt.text(0.495, 0.11, vandyOverDAS, ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
 plt.text(0.135, 0.23, 'Transfer:', ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b', fontweight='bold')
 plt.grid(True)
-plt.ylim(0, 1.2)
+plt.ylim(0, 120)
 fig5.autofmt_xdate()
 plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
 fig5.savefig('figEventInPercent.png')
