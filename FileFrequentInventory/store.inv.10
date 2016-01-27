@@ -1,0 +1,26 @@
+  Size      File count            Filename
+----------  ----------  ------------------------------
+  25.343M            1  /cms/store/ONLYATVANDY-LFS.txt/
+ 689.879G          257  /cms/store/PhEDEx_Debug/
+  13.758G            6  /cms/store/PhEDEx_LoadTest07/
+ 208.538G         1207  /cms/store/autocms/
+ 647.461G          228  /cms/store/backfill/
+  89.097T        41495  /cms/store/data/
+   0.000             1  /cms/store/dummy1/
+   4.686T         2338  /cms/store/express/
+ 324.317G         4255  /cms/store/generator/
+  10.486M            1  /cms/store/grid_sanity/
+ 324.450M           40  /cms/store/group/
+   1.047P       179226  /cms/store/hidata/
+  46.020T        13520  /cms/store/himc/
+ 202.218T        72945  /cms/store/mc/
+ 370.944G           53  /cms/store/relval/
+   9.951T         2686  /cms/store/results/
+   0.000             0  /cms/store/rsvtestdir/
+ 302.299K           12  /cms/store/stageouttest/
+ 449.783G         3489  /cms/store/temp/
+   0.000             0  /cms/store/test/
+   9.866T       128829  /cms/store/unmerged/
+ 507.524T      1360773  /cms/store/user/
+----------  ----------  ------------------------------
+   1.919P      1811362  TOTAL

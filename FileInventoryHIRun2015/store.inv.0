@@ -1,0 +1,30 @@
+  Size      File count            Filename
+----------  ----------  ------------------------------
+ 141.809G          337  /cms/store/hidata/HIRun2015/Cosmics/
+  14.147T         4119  /cms/store/hidata/HIRun2015/HIEWQExo/
+  22.739T         7168  /cms/store/hidata/HIRun2015/HIFlowCorr/
+   6.666T         1903  /cms/store/hidata/HIRun2015/HIForward/
+  91.006T        22494  /cms/store/hidata/HIRun2015/HIHardProbes/
+   7.432T         2054  /cms/store/hidata/HIRun2015/HIHardProbesPeripheral/
+  18.466T         5456  /cms/store/hidata/HIRun2015/HIHardProbesPhotons/
+  25.411T         7338  /cms/store/hidata/HIRun2015/HIMinimumBias1/
+  41.276T        13292  /cms/store/hidata/HIRun2015/HIMinimumBias2/
+  24.780T         8215  /cms/store/hidata/HIRun2015/HIMinimumBias3/
+  24.822T         8222  /cms/store/hidata/HIRun2015/HIMinimumBias4/
+  27.122T         8601  /cms/store/hidata/HIRun2015/HIMinimumBias5/
+  26.643T         8456  /cms/store/hidata/HIRun2015/HIMinimumBias6/
+  19.211T         5957  /cms/store/hidata/HIRun2015/HIMinimumBias7/
+  17.547T         5071  /cms/store/hidata/HIRun2015/HIOniaCentral30L2L3/
+  36.068T        11221  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0/
+  10.131T         3139  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0B/
+  15.654T         4800  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0C/
+  16.203T         4993  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0D/
+   3.583T         1055  /cms/store/hidata/HIRun2015/HIOniaPeripheral30100/
+  28.799T         8279  /cms/store/hidata/HIRun2015/HIOniaTnP/
+  12.643T         3678  /cms/store/hidata/HIRun2015/HIPhoton40AndZ/
+  32.104G          294  /cms/store/hidata/HIRun2015/HcalHPDNoise/
+ 763.033M          275  /cms/store/hidata/HIRun2015/HcalNZS/
+   1.001T         3302  /cms/store/hidata/HIRun2015/MinimumBias/
+  86.318G          320  /cms/store/hidata/HIRun2015/NoBPTX/
+----------  ----------  ------------------------------
+ 491.611T       150039  TOTAL

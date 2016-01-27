@@ -1,0 +1,32 @@
+  Size      File count            Filename
+----------  ----------  ------------------------------
+[mi=0 tid=3 file=:1301 fn=mq_conn_make] host = tcp://10.0.13.240:6712, connect_mode = 0
+[mi=213 tid=16 file=os_remote_client.c:208 fn=mq_address_to_string] DEBUG: string created = tcp://10.0.13.240:6712, malloc size = 33, actual size = 22
+ 141.809G          337  /cms/store/hidata/HIRun2015/Cosmics/
+  17.953T         5203  /cms/store/hidata/HIRun2015/HIEWQExo/
+  26.033T         8128  /cms/store/hidata/HIRun2015/HIFlowCorr/
+   7.104T         2024  /cms/store/hidata/HIRun2015/HIForward/
+  91.181T        22562  /cms/store/hidata/HIRun2015/HIHardProbes/
+   8.061T         2227  /cms/store/hidata/HIRun2015/HIHardProbesPeripheral/
+  18.478T         5459  /cms/store/hidata/HIRun2015/HIHardProbesPhotons/
+  25.995T         7506  /cms/store/hidata/HIRun2015/HIMinimumBias1/
+  54.561T        17411  /cms/store/hidata/HIRun2015/HIMinimumBias2/
+  37.998T        12379  /cms/store/hidata/HIRun2015/HIMinimumBias3/
+  32.276T        10736  /cms/store/hidata/HIRun2015/HIMinimumBias4/
+  27.145T         8607  /cms/store/hidata/HIRun2015/HIMinimumBias5/
+  26.650T         8458  /cms/store/hidata/HIRun2015/HIMinimumBias6/
+  27.122T         8559  /cms/store/hidata/HIRun2015/HIMinimumBias7/
+  19.322T         5575  /cms/store/hidata/HIRun2015/HIOniaCentral30L2L3/
+  36.694T        11441  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0/
+  16.335T         5053  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0B/
+  16.255T         5011  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0C/
+  16.261T         5013  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0D/
+   3.585T         1057  /cms/store/hidata/HIRun2015/HIOniaPeripheral30100/
+  28.986T         8330  /cms/store/hidata/HIRun2015/HIOniaTnP/
+  14.769T         4292  /cms/store/hidata/HIRun2015/HIPhoton40AndZ/
+  32.117G          303  /cms/store/hidata/HIRun2015/HcalHPDNoise/
+ 763.033M          275  /cms/store/hidata/HIRun2015/HcalNZS/
+   1.001T         3302  /cms/store/hidata/HIRun2015/MinimumBias/
+  86.318G          320  /cms/store/hidata/HIRun2015/NoBPTX/
+----------  ----------  ------------------------------
+ 554.028T       169568  TOTAL

@@ -1,0 +1,34 @@
+  Size      File count            Filename
+----------  ----------  ------------------------------
+ 142.849G          346  /cms/store/hidata/HIRun2015/Cosmics/
+  19.857T         5740  /cms/store/hidata/HIRun2015/HIEWQExo/
+  29.628T         9171  /cms/store/hidata/HIRun2015/HIFlowCorr/
+   7.539T         2149  /cms/store/hidata/HIRun2015/HIForward/
+ 101.502T        25377  /cms/store/hidata/HIRun2015/HIHardProbes/
+   8.573T         2375  /cms/store/hidata/HIRun2015/HIHardProbesPeripheral/
+  22.960T         6876  /cms/store/hidata/HIRun2015/HIHardProbesPhotons/
+  32.981T        10048  /cms/store/hidata/HIRun2015/HIMinimumBias1/
+   5.313T         1863  /cms/store/hidata/HIRun2015/HIMinimumBias10/
+   5.301T         1861  /cms/store/hidata/HIRun2015/HIMinimumBias11/
+  61.181T        19758  /cms/store/hidata/HIRun2015/HIMinimumBias2/
+  44.615T        14721  /cms/store/hidata/HIRun2015/HIMinimumBias3/
+  44.670T        14716  /cms/store/hidata/HIRun2015/HIMinimumBias4/
+  33.688T        10914  /cms/store/hidata/HIRun2015/HIMinimumBias5/
+  33.184T        10775  /cms/store/hidata/HIRun2015/HIMinimumBias6/
+  33.653T        10868  /cms/store/hidata/HIRun2015/HIMinimumBias7/
+   5.243T         1846  /cms/store/hidata/HIRun2015/HIMinimumBias8/
+   5.310T         1873  /cms/store/hidata/HIRun2015/HIMinimumBias9/
+  21.528T         6222  /cms/store/hidata/HIRun2015/HIOniaCentral30L2L3/
+  40.136T        12509  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0/
+  19.777T         6126  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0B/
+  19.693T         6079  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0C/
+  19.700T         6074  /cms/store/hidata/HIRun2015/HIOniaL1DoubleMu0D/
+   4.002T         1179  /cms/store/hidata/HIRun2015/HIOniaPeripheral30100/
+  32.613T         9395  /cms/store/hidata/HIRun2015/HIOniaTnP/
+  17.602T         5118  /cms/store/hidata/HIRun2015/HIPhoton40AndZ/
+  33.681G          332  /cms/store/hidata/HIRun2015/HcalHPDNoise/
+ 783.265M          284  /cms/store/hidata/HIRun2015/HcalNZS/
+   1.023T         3396  /cms/store/hidata/HIRun2015/MinimumBias/
+  86.933G          329  /cms/store/hidata/HIRun2015/NoBPTX/
+----------  ----------  ------------------------------
+ 671.538T       208320  TOTAL

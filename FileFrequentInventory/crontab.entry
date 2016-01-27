@@ -1,0 +1,2 @@
+MAILTO=""
+0 0,8,16 * * * cd /home/tuos/T2VanderbiltStorageTools/FileFrequentInventory && ./fileInventory.sh /home/tuos/web/fileFrequentInventory.html 

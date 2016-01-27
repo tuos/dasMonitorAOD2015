@@ -1,0 +1,4 @@
+MAILTO=""
+0 0,8,16 * * * cd /home/tuos/T2VanderbiltStorageTools/FileFrequentInventory && ./fileInventory.sh /home/tuos/web/fileFrequentInventory.html
+0 0,8,16 * * * cd /home/tuos/T2VanderbiltStorageTools/FileFrequentInventory/test/HIRun2015 && ./fileInventory.sh /home/tuos/web/HIRun2015Inventory.html
+0 0,8,16 * * * cd /home/tuos/T2VanderbiltStorageTools/FileFrequentInventory/test/hidata && ./fileInventory.sh /home/tuos/web/hidataInventory.html
