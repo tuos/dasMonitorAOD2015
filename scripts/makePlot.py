@@ -17,9 +17,10 @@ plt.text(0.5, 0.2, 'Total Volume in RAW data = 1450.06 TB', ha='center', va='cen
 ax.tick_params(axis='x', labelsize=25)
 ax.tick_params(axis='y', labelsize=25)
 plt.grid(True)
-plt.ylim(0, 800)
+plt.ylim(0, 900)
 fig.autofmt_xdate()
-plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+#plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+plt.xlim([datetime.date(2015, 12, 24), datetime.date(2016, 1, 24)])
 fig.savefig('figVolume.png')
 
 
@@ -33,9 +34,10 @@ plt.text(0.5, 0.2, 'Total event in RAW data = 1122.18 M', ha='center', va='cente
 ax2.tick_params(axis='x', labelsize=25)
 ax2.tick_params(axis='y', labelsize=25)
 plt.grid(True)
-plt.ylim(0, 1400)
+plt.ylim(0, 1500)
 fig2.autofmt_xdate()
-plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+#plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+plt.xlim([datetime.date(2015, 12, 24), datetime.date(2016, 1, 24)])
 fig2.savefig('figEvent.png')
 
 fig3 = plt.figure(figsize=(15,10))
@@ -50,7 +52,8 @@ ax3.tick_params(axis='y', labelsize=25)
 plt.grid(True)
 plt.ylim(0, 7e5)
 fig3.autofmt_xdate()
-plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+#plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+plt.xlim([datetime.date(2015, 12, 24), datetime.date(2016, 1, 24)])
 fig3.savefig('figLumi.png')
 
 fig4 = plt.figure(figsize=(15,10))
@@ -62,9 +65,10 @@ ax4 = fig4.add_subplot(111)
 ax4.tick_params(axis='x', labelsize=25)
 ax4.tick_params(axis='y', labelsize=25)
 plt.grid(True)
-plt.ylim(0, 2.5e5)
+plt.ylim(0, 2.7e5)
 fig4.autofmt_xdate()
-plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+#plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+plt.xlim([datetime.date(2015, 12, 24), datetime.date(2016, 1, 24)])
 fig4.savefig('figFile.png')
 
 # adding transferred volume at vandy to the next plot
@@ -83,9 +87,13 @@ plt.text(0.38, 0.75, '(Total AOD event)/(Total RAW event)', ha='center', va='cen
 latestAODEvt="Latest total AOD event = "+str('{:.2f}'.format(round(float(evtSize[-1]), 2)))+" M"
 plt.text(0.34, 0.635, latestAODEvt, ha='center', va='center', transform=ax5.transAxes, fontsize=26)
 plt.text(0.29, 0.575, 'Total RAW event = 1122.18 M', ha='center', va='center', transform=ax5.transAxes, fontsize=26)
-plt.text(0.99, evtSize[-1]/1122.18/1.2, '-----', ha='center', va='center', transform=ax5.transAxes, fontsize=30)
+plt.text(0.99, evtSize[-1]/1122.18/1.4, '-----', ha='center', va='center', transform=ax5.transAxes, fontsize=30)
 latestRatio=str('{:.1f}'.format(round(float(evtSize[-1]*100/1122.18), 1)))+"%"
-plt.text(1.076, evtSize[-1]/1122.18/1.2, latestRatio, ha='center', va='center', transform=ax5.transAxes, fontsize=30)
+plt.text(1.076, evtSize[-1]/1122.18/1.4, latestRatio, ha='center', va='center', transform=ax5.transAxes, fontsize=30)
+#
+plt.text(0.88, 0.58, 'The 0.2% missing is', ha='center', va='center', transform=ax5.transAxes, fontsize=30)
+plt.text(0.9, 0.52, 'because of failed jobs', ha='center', va='center', transform=ax5.transAxes, fontsize=30)
+#
 ax5.tick_params(axis='x', labelsize=25)
 ax5.tick_params(axis='y', labelsize=25)
 roundVandy='{:.3f}'.format(round(float(sizeAtVandy), 3))
@@ -95,13 +103,16 @@ volumeInDAS="Latest volume in  DAS   = "+str(roundDAS)+" TB"
 ratioVandyDAS=float(sizeAtVandy)*100/volumeSize[-1]
 roundRatio='{:.2f}'.format(round(float(ratioVandyDAS), 2))
 vandyOverDAS="(Vandy volume)/(DAS volume) = "+str(roundRatio)+"%"
-plt.text(0.59, 0.26, volumeInVandy, ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
-plt.text(0.59, 0.19, volumeInDAS, ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
-plt.text(0.495, 0.11, vandyOverDAS, ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
+#plt.text(0.59, 0.26, volumeInVandy, ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
+#plt.text(0.59, 0.19, volumeInDAS, ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
+#plt.text(0.495, 0.11, vandyOverDAS, ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
 plt.text(0.135, 0.23, 'Transfer:', ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b', fontweight='bold')
+plt.text(0.48, 0.23, 'From PhEDEx, all PDs are', ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
+plt.text(0.53, 0.16, '100% transferred to Vanderbilt', ha='center', va='center', transform=ax5.transAxes, fontsize=30, color='b')
 plt.grid(True)
-plt.ylim(0, 120)
+plt.ylim(0, 140)
 fig5.autofmt_xdate()
-plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+#plt.xlim([datetime.date(2015, 12, 24), datetime.datetime.now() + datetime.timedelta(days=1)])
+plt.xlim([datetime.date(2015, 12, 24), datetime.date(2016, 1, 24)])
 fig5.savefig('figEventInPercent.png')
 
